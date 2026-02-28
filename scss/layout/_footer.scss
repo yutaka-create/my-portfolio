@@ -1,0 +1,10 @@
+@use "../foundation/variable" as v;
+
+.l-footer {
+    padding: 10px 0;
+    text-align: center;
+
+    &__copyright {
+        font-size: 0.625rem;
+    }
+}

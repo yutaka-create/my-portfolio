@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Profile" />
+    <meta property="og:description" content="私のプロフィールと制作実績を紹介するポートフォリオサイトです。" />
+    <meta property="og:site_name" content="Profile" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:image" content="https://example.com/img/ogp-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>CodeStep入門編①</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Web制作を学ぶ豊（Yutaka）のポートフォリオサイトです。HTML/CSS/JavaScript（GSAP）を用いた制作実績やプロフィールを紹介しています。">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header class="l-header" ここから -->
+    <header class="l-header">
+        <div class="l-header__inner l-inner">
+            <h1 class="l-header__title">
+                <a class="l-header__title-link" href="index.html">
+                    <img class="l-header__logo" src="./img/logo.svg" alt="Profile">
+                </a>
+            </h1>
+            <nav class="l-header__nav">
+                <ul class="l-header__nav-items">
+                    <li class="l-header__nav-item"><a class="l-header__nav-item-link" href="#about">About</a></li>
+                    <li class="l-header__nav-item"><a class="l-header__nav-item-link" href="#bicycle">Bicycle</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header class="l-header" ここまで -->
+    <!-- main ここから -->
+    <main>
+        <!-- section class="p-main-visual" ここから -->
+        <div class="p-main-visual">
+            <img class="p-main-visual__img" src="./img/mainvisual-img.jpg" alt="白い壁の前に置かれたシルバーの自転車">
+        </div>
+        <!-- section class="p-main-visual" ここまで -->
+        <!-- section class="p-about" ここから -->
+        <section id="about" class="p-about">
+            <div class="p-about__container l-inner">
+                <h2 class="p-about__title c-section-title u-reveal">About</h2>
+                <div class="p-about__content u-fade-up">
+                    <div class="p-about__img-wrapper">
+                        <img class="p-about__img" src="./img/about-img.jpg" alt="KAKERU MIYAICHIのプロフィール写真">
+                    </div>
+                    <div class="p-about__description">
+                        <h3 class="p-about__sub-title">KAKERU MIYAICHI</h3>
+                        <p class="p-about__text">
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section class="p-about" ここまで -->
+        <!-- section class="p-bicycle" ここから -->
+        <section id="bicycle" class="p-bicycle">
+            <div class="p-bicycle__inner l-inner">
+                <h2 class="p-bicycle__title c-section-title u-reveal">Bicycle</h2>
+                <ul class="p-bicycle__cards c-cards u-fade-up">
+                    <li class="p-bicycle__item c-cards__item">
+                        <a class="p-bicycle__item-link c-cards__item-link" href="#">
+                            <div class="p-bicycle__img-wrapper c-cards__img-wrapper">
+                                <img class="p-bicycle__img c-cards__img" src="./img/bicycle1.jpg"
+                                    alt="街並みを背景にした自転車のサドル部分" width="274" height="182" loading="lazy" decoding="async">
+                            </div>
+                            <h3 class="p-bicycle__sub-title c-cards__title">タイトルタイトル</h3>
+                            <p class="p-bicycle__text c-cards__text">テキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="p-bicycle__item c-cards__item">
+                        <a class="p-bicycle__item-link c-cards__item-link" href="#">
+                            <div class="p-bicycle__img-wrapper c-cards__img-wrapper">
+                                <img class="p-bicycle__img c-cards__img" src="./img/bicycle2.jpg"
+                                    alt="レンガの壁の前に停められたシルバーの自転車" width="274" height="182" loading="lazy"
+                                    decoding="async">
+                            </div>
+                            <h3 class="p-bicycle__sub-title c-cards__title">タイトルタイトル</h3>
+                            <p class="p-bicycle__text c-cards__text">テキストテキストテキスト</p>
+                        </a>
+                    </li>
+                    <li class="p-bicycle__item c-cards__item">
+                        <a class="p-bicycle__item-link c-cards__item-link" href="#">
+                            <div class="p-bicycle__img-wrapper c-cards__img-wrapper">
+                                <img class="p-bicycle__img c-cards__img" src="./img/bicycle3.jpg"
+                                    alt="室内の壁際に置かれた自転車の後輪部分" width="274" height="182" loading="lazy" decoding="async">
+                            </div>
+                            <h3 class="p-bicycle__sub-title c-cards__title">タイトルタイトル</h3>
+                            <p class="p-bicycle__text c-cards__text">テキストテキストテキスト</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section class="p-bicycle" ここまで -->
+    </main>
+    <!-- main ここまで -->
+    <!-- footer class="l-footer" ここから -->
+    <footer class="l-footer">
+        <small class="l-footer__copyright">本サイトは、学習のために作成した架空のサイトです。</small>
+    </footer>
+    <!-- footer class="l-footer" ここまで -->
+    <!-- ページトップ戻るボタン ここから -->
+    <a class="c-to-top u-fade-in" href="#"></a>
+    <!-- ページトップ戻るボタン ここまで -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

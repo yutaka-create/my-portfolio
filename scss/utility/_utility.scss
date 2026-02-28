@@ -1,0 +1,38 @@
+@use "../foundation/variable" as v;
+
+//h2を左端から右端へふわっと表示させるアニメーション設定
+.u-reveal {
+    // アニメーション前の状態（左側に隠れている）
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 1.0s ease-out;
+
+    // JSで .is-animated などのクラスが付与された時の状態
+    &.is-animated {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+// 下からふわっと出るアニメーション共通設定
+.u-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+
+    // JSで表示領域に入った時にこのクラスをつける
+    &.is-animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//ページトップ戻るボタン
+.u-fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.0s ease-out;
+
+    &.is-show {
+        opacity: 1.0;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,71 @@
+@use "../foundation/variable" as v;
+
+.c-section-title {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: v.$color-main;
+    line-height: v.$lh-base;
+    border-bottom: 1px solid v.$color-main;
+    
+
+    
+}
+
+.c-cards {
+    text-align: center;
+
+    &__item-link {
+        display: block;
+        @include v.hover-opacity;
+    }
+
+    &__img-wrapper {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 1.0rem;
+        font-weight: v.$fw-bold;
+    }
+
+}
+
+.c-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    background-color: v.$color-main;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include v.mq-sp {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 10px;
+        background-color: v.$color-white;
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    }
+
+    @include v.hover-opacity;
+}

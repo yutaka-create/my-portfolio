@@ -1,0 +1,45 @@
+@use "../foundation/variable" as v;
+
+.p-about {
+    margin-bottom: 1000px;
+
+    &__title {
+        margin-bottom: 70px;
+
+        @include v.mq-sp {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        @include v.mq-sp {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__img-wrapper {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__sub-title {
+        font-size: 1.0rem;
+        font-weight: v.$fw-bold;
+        margin-bottom: 10px;
+    }
+}

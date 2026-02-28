@@ -1,0 +1,14 @@
+@use "../foundation/variable" as v;
+
+.p-main-visual {
+    height: 600px;
+    margin-bottom: 800px;
+    line-height: 0;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

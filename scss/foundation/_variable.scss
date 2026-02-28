@@ -1,0 +1,29 @@
+// 色の定義
+$color-main: #383e45; 
+$color-nav: #24292e;
+$color-white: #fff;
+
+// フォントに関するの定義
+$font-size-base: 0.9rem; // 14.4px相当
+$lh-base: 1.5; // ほとんどの要素で使う基本値
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 600;
+
+// ブレイクポイントの定義
+$breakpoint-sp: 600px; // 600px以下をスマホとする
+
+// ホバーアクションの定義
+@mixin hover-opacity {
+    transition: opacity 0.3s ease;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+//メディアクエリ用の関数の定義
+@mixin mq-sp {
+  @media screen and (max-width: #{$breakpoint-sp}) {
+    @content; 
+  }
+}

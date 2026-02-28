@@ -1,0 +1,40 @@
+@use "../foundation/variable" as v;
+
+.l-header {
+    padding: 10px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 120px;
+        line-height: 0;
+
+        @include v.mq-sp {
+            // 600px以下では、最小80px〜最大120pxの間で、画面幅に合わせて可変にする
+            width: clamp(80px, 30vw, 120px);
+        }
+
+        &-link {
+            display: block;
+            @include v.hover-opacity;
+        }
+    }
+
+    &__nav {
+        &-items {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &-item-link {
+            color: v.$color-nav;
+            line-height: 1.528;
+            @include v.hover-opacity;
+        }
+    }
+}

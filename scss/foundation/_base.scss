@@ -1,0 +1,41 @@
+@use "variable" as v;
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    // ヒラギノ角ゴを優先し、Windows用にはメイリオを指定
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+    font-size: v.$font-size-base;
+    font-weight: v.$fw-light;
+    color: v.$color-main;
+    line-height: v.$lh-base;
+
+}
+
+// 共通のインナー（指示書の960pxを反映）
+.l-inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+p {
+    // p要素だけ特別な計算値を指定（コメントで計算根拠を残すのがプロ！）
+    // 22px(行送り) / 14.4px(フォントサイズ) = 1.527...
+    line-height: 1.528;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}

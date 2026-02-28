@@ -1,0 +1,29 @@
+@use "../foundation/variable" as v;
+
+.p-bicycle {
+    margin-bottom: 1000px;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2%;
+
+        @include v.mq-sp {
+            grid-template-columns: 1fr;
+            column-gap: normal;
+            row-gap: 30px;
+        }
+    }
+
+    &__img-wrapper {
+        margin-bottom: 10px;
+    }
+
+    &__sub-title {
+        margin-bottom: 5px;
+    }
+}
